@@ -43,6 +43,99 @@
         "n"
         "x"
       ];
+      key = "<S-h>";
+      action = "^";
+      options = {
+        silent = true;
+        remap = false;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "<S-l>";
+      action = "$";
+      options = {
+        silent = true;
+        remap = false;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "<S-k>";
+      action = "{";
+      options = {
+        silent = true;
+        remap = false;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "<S-j>";
+      action = "}";
+      options = {
+        silent = true;
+        remap = false;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
+      key = "m";
+      action = "%";
+      options = {
+        silent = true;
+        remap = false;
+      };
+    }
+    {
+      mode = [
+        "n"
+      ];
+      key = "<leader>w";
+      action = ":w<CR>";
+      options = {
+        silent = true;
+        remap = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+      ];
+      key = "<leader>q";
+      action = ":q<CR>";
+      options = {
+        silent = true;
+        remap = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+      ];
+      key = "<leader>wq";
+      action = ":wq<CR>";
+      options = {
+        silent = true;
+        remap = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+      ];
       key = "<Up>";
       action = "v:count == 0 ? 'gk' : 'k'";
       options = {
