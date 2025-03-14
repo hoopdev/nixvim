@@ -78,57 +78,38 @@
         '';
         notify_on_error = true;
         formatters_by_ft = {
-          html = [
-            [
-              "prettierd"
-              "prettier"
-            ]
-          ];
-          css = [
-            [
-              "prettierd"
-              "prettier"
-            ]
-          ];
-          javascript = [
-            [
-              "prettierd"
-              "prettier"
-            ]
-          ];
-          typescript = [
-            [
-              "prettierd"
-              "prettier"
-            ]
-          ];
-          python = [
-            "black"
-            "isort"
-          ];
-          lua = [ "stylua" ];
-          nix = [ "nixfmt-rfc-style" ];
-          markdown = [
-            [
-              "prettierd"
-              "prettier"
-            ]
-          ];
-          yaml = [
-            [
-              "prettierd"
-              "prettier"
-            ]
-          ];
-          terraform = [ "terraform_fmt" ];
-          bicep = [ "bicep" ];
-          bash = [
-            "shellcheck"
-            "shellharden"
-            "shfmt"
-          ];
-          json = [ "jq" ];
-          "_" = [ "trim_whitespace" ];
+          html = {
+            formatters = ["prettierd" "prettier"];
+            stop_after_first = true;
+          };
+          css = {
+            formatters = ["prettierd" "prettier"];
+            stop_after_first = true;
+          };
+          javascript = {
+            formatters = ["prettierd" "prettier"];
+            stop_after_first = true;
+          };
+          typescript = {
+            formatters = ["prettierd" "prettier"];
+            stop_after_first = true;
+          };
+          python = ["black" "isort"];
+          lua = ["stylua"];
+          nix = ["nixfmt-rfc-style"];
+          markdown = {
+            formatters = ["prettierd" "prettier"];
+            stop_after_first = true;
+          };
+          yaml = {
+            formatters = ["prettierd" "prettier"];
+            stop_after_first = true;
+          };
+          terraform = ["terraform_fmt"];
+          bicep = ["bicep"];
+          bash = ["shellcheck" "shellharden" "shfmt"];
+          json = ["jq"];
+          "_" = ["trim_whitespace"];
         };
 
         formatters = {
