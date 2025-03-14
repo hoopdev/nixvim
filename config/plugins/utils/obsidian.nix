@@ -9,7 +9,7 @@
         }
       ];
       templates = {
-        subdir = "Templates";
+        subdir = "Template";
         dateFormat = "%Y-%m-%d";
         timeFormat = "%H:%M";
         substitutions = { };
