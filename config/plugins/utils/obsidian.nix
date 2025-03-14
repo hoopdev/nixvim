@@ -4,19 +4,19 @@
     settings = {
       workspaces = [
         {
-          name = "SecondBrain";
-          path = "~/projects/personal/SecondBrain";
+          name = "Obsidian";
+          path = "~/Obsidian/Main";
         }
       ];
       templates = {
-        subdir = "templates";
+        subdir = "Templates";
         dateFormat = "%Y-%m-%d";
         timeFormat = "%H:%M";
         substitutions = { };
       };
 
       dailyNotes = {
-        folder = "0_Daily_Notes";
+        folder = "Daily";
         dateFormat = "%Y-%m-%d";
         aliasFormat = "%B %-d, %Y";
       };
